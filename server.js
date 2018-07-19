@@ -17,9 +17,8 @@ app.use(bodyParser.json({
 }));
 
 //ROUTER
-//ROUTER
-require('./app/routing/apiRoutes.js').default(app);
-require('./app/routing/htmlRoutes.js')(app);
+require('./app/routing/apiroutes.js')(app);
+require('./app/routing/htmlroutes.js')(app);
 
 // Starts the server to begin listening
 app.listen(PORT, function () {
